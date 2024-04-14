@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6990f2;
+}
+
+.wrapper{
+    width: 430px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.wrapper header{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    color: #6990f2;
+}
+
+.wrapper form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    height: 167px;
+    border: 2px dashed;
+    border-radius: 5px;
+    border-color: #6990f2;
+    cursor: pointer;
+}
+
+form :where(i, p){
+    color: #6990f2;
+}
+
+form i{
+    font-size: 50px;
+}
+
+form p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+section .row{
+    background: #e9f0ff;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .row i{
+    font-size: 30px;
+    color: #6990f2;
+}
+
+section .details span{
+    font-size: 15px;
+}
+
+.progress-area .row .content{
+    width: 100%;
+    padding-left: 15px;
+}
+
+.progress-area .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.progress-area .progress-bar{
+    height: 6px;
+    background: #fff;
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 4px;
+}
+
+.progress-bar .progress{
+    height: 100%;
+    width: 20%;
+    background: #6990f2;
+    border-radius: inherit;
+}
+
+.uploaded-area{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.uploaded-area::-webkit-scrollbar{
+    width: 1px;
+}
+
+ 
+.uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.uploaded-area .fa-check{
+    font-size: 15px;
+    color: #6990f2;
+}
+
+.uploaded-area .size{
+    font-size: 11px;
+    color: #404040;
+}
+
+.uploaded-area .row .pages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uploaded-area .row .page-box{
+    height: 17px;
+    width: 40px;
+}
+
+.uploaded-area .row .pages span{
+    font-size: 13px;
+
+}
+
+.uploaded-area .row .page-start, .uploaded-area .row .page-start{
+    margin-right: 5px;
+}
+
+.btn-wrapper .submit-btn{
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #6990f2;
+    font-size: 15px;
+}
