@@ -66,8 +66,15 @@ function uploadFile(fileName){
 }
 
 
-submit_btn.addEventListener("click", ()=>{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", "http://localhost:8080/merge", false ); // false for synchronous request
-    xmlHttp.send( null );
-});
+// submit_btn.addEventListener("click", ()=>{
+
+//     const pg_start = document.getElementsByClassName("page-start");
+//     const pg_end = document.getElementsByClassName("page-end");
+
+//     console.log(pg_start);
+//     console.log(pg_end);
+
+//     // var xmlHttp = new XMLHttpRequest();
+//     // xmlHttp.open( "GET", "http://localhost:8080/merge", false ); // false for synchronous request
+//     // xmlHttp.send( null );
+// });
