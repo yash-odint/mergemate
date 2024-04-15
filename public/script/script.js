@@ -2,9 +2,7 @@ const form = document.querySelector('form');
 const input_file = document.querySelector(".input-file");
 const progressArea = document.querySelector(".progress-area");
 const uploadArea = document.querySelector(".uploaded-area");
-
-
-
+const submit_btn = document.querySelector(".submit-btn");
 
 form.addEventListener("click", ()=>{
     input_file.click();
@@ -14,7 +12,7 @@ input_file.onchange = ({target}) => {
     let file = target.files[0];
     if(file){
         let fileName = file.name;
-        if(fileName >= 12){
+        if(fileName.length >= 12){
             fileName = fileName.substring(0,12);
         }
         uploadFile(fileName);
@@ -66,3 +64,10 @@ function uploadFile(fileName){
     let formData = new FormData(form);
     xhr.send(formData);
 }
+
+
+submit_btn.addEventListener("click", ()=>{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "http://localhost:8080/merge", false ); // false for synchronous request
+    xmlHttp.send( null );
+});

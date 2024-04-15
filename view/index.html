@@ -11,7 +11,7 @@
     <div class="wrapper">
         <header>Upload pdf files</header>
         <form action="#">
-            <input type="file" class="input-file" name="pdfs" multiple accept=".pdf" hidden>
+            <input type="file" class="input-file" name="pdfs" accept=".pdf" hidden>
             <i class="fas fa-cloud-upload-alt"></i>
             <p>Browse file to upload</p>
         </form>
@@ -19,7 +19,9 @@
         <section class="uploaded-area"></section>
     </div>
     <div class="btn-wrapper">
-        <button class="submit-btn">Merge PDFs</button>
+        <form method="get" action="/merge">
+            <button class="submit-btn">Merge PDFs</button>
+        </form>
     </div>
 
     <script src="/script/script.js"></script>
