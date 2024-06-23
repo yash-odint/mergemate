@@ -66,15 +66,22 @@ function uploadFile(fileName){
 }
 
 
-// submit_btn.addEventListener("click", ()=>{
+submit_btn.addEventListener("click", ()=>{
 
-//     const pg_start = document.getElementsByClassName("page-start");
-//     const pg_end = document.getElementsByClassName("page-end");
+    const pg_start = document.getElementsByClassName("page-start");
+    const pg_end = document.getElementsByClassName("page-end");
+    const pageNums = [];
+    for(let i=0; i<pg_start.length; i++){
+        const obj = {
+            pdfId: i,
+            start: pg_start[i].value,
+            end: pg_end[i].value
+        };
+        pageNums.push(obj);
+    }
+    console.log(pageNums);
 
-//     console.log(pg_start);
-//     console.log(pg_end);
-
-//     // var xmlHttp = new XMLHttpRequest();
-//     // xmlHttp.open( "GET", "http://localhost:8080/merge", false ); // false for synchronous request
-//     // xmlHttp.send( null );
-// });
+    // var xmlHttp = new XMLHttpRequest();
+    // xmlHttp.open( "GET", "http://localhost:8080/merge", false ); // false for synchronous request
+    // xmlHttp.send( null );
+});
